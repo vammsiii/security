@@ -9,6 +9,7 @@ const SECRET_KEY = "mysecret123";
 // Fake users (no DB)
 const users = [
   { id: 1, username: "vasmi", password: "1819" },
+  { id: 3, username: "vasm", password: "181" },
   { id: 2, username: "user", password: "abcd" }
 ];
 // LOGIN
@@ -39,22 +40,6 @@ function verifyToken(req, res, next) {
     next();
   });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Protected Route
 app.get("/dashboard", verifyToken, (req, res) => {
   res.json({
