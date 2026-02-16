@@ -10,7 +10,7 @@ const SECRET_KEY = "mysecret123";
 const users = [
   { id: 1, username: "vasmi", password: "1819" },
   { id: 3, username: "vasm", password: "181" },
-  { id: 2, username: "user", password: "abcd" }
+  { id: 2, username: "user", password: "abc" }
 ];
 // LOGIN
 app.post("/login", (req, res) => {
